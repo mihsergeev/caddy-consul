@@ -67,6 +67,7 @@ services:
     image: consul
     hostname: consul-$HOSTNAME
     container_name: consul-$HOSTNAME
+    restart: always
     command: $command
     network_mode: host
     volumes:
@@ -158,9 +159,12 @@ docker compose up -d --build
 
 sleep 10
 
+echo "if multiple server - go to next server and run script there"
+
+
 echo "open browser and check https://test.${server_ips[0]}.sslip.io - for caddy test"
 echo "open browser and check http://${server_ips[0]}:8500/ui/ - for consul test"
-echo "if multiple server - go to next server and run script there"
+
 
 #### clean
 # cd /app/caddyconsul && docker compose stop
