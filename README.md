@@ -43,3 +43,14 @@ echo $(hostname -I | cut -d' ' -f1) $(echo $hostname) >> /etc/hosts
 ```
 bash install.sh
 ```
+
+#
+#
+
+
+####  Uninstall
+```
+# cd /app/caddyconsul && docker compose stop
+# cd / && rm -rf /app/caddyconsul
+# docker system prune -a
+```

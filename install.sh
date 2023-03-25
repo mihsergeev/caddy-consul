@@ -1,4 +1,4 @@
-echo "INSTALL caddy + consul in DOCKER (HA)"
+echo "INSTALL caddy + consul in DOCKER COMPOSE (HA)"
 
 echo "`cat <<YOLLOPUKKI
 
@@ -163,8 +163,8 @@ sleep 10
 echo "if multiple server - go to next server and run script there"
 
 
-echo "open browser and check https://test.${server_ips[0]}.sslip.io - for caddy test"
-echo "open browser and check http://${server_ips[0]}:8500/ui/ - for consul test"
+echo "open browser and check https://test.${server_ips[0]}.sslip.io - for caddy test(after install on all servers)"
+echo "open browser and check http://${server_ips[0]}:8500/ui/ - for consul test(after install on all servers)"
 
 
 #### clean
