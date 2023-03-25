@@ -43,7 +43,7 @@ command="agent -server -data-dir=/consul/data -bind ${server_ips[0]} -client 0.0
 mkdir -p /app/caddyconsul -p
 cd /app/caddyconsul || exit
 
-mkdir caddy_config consul-data sites
+mkdir caddy_config consul-data sites files
 touch Caddyfile consul-config.json
 
 ##### ADD docker-compose.yml
@@ -61,6 +61,7 @@ services:
     volumes:
       - ./caddy_config:/config
       - ./sites:/sites
+      - ./files:/files
       - ./Caddyfile:/etc/caddy/Caddyfile
 
   consul-$HOSTNAME:
