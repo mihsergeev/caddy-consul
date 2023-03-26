@@ -44,6 +44,11 @@ echo $(hostname -I | cut -d' ' -f1) $(echo $hostname) >> /etc/hosts
 bash install.sh
 ```
 
+
+### Important!!!
+#### Need to configure the firewall, so it was allowed only ports 80 and 443 for 0.0.0.0/0, and all others are blocked. Allow everything for your white ip or your vpn
+
+
 #
 #
 
