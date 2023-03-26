@@ -1,4 +1,4 @@
-# Caddy high availability with Consul (Docker)
+# Caddy high availability with Consul (docker compose)
 
 ## Description
 
