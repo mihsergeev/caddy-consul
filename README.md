@@ -27,7 +27,7 @@ cd /tmp/caddy-consul-install
 ```
 docker run -it consul consul keygen
 ```
-3. replace **CONSULKEY** to secret in file **install.sh** (one on all servers) - 140 line
+3. replace **CONSULKEY** to secret in file **install.sh** (one on all servers) - 142 line
 
 Each server must have a unique hostname (replace **SERVERNAME** with your name)
 
